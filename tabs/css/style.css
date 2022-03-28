@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: auto;
+    height: 578px;
+    padding: 16px;
+    background-image: url("../img/solar.jpg");
+
+}
+
+.ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.li {
+    height: 10px;
+    width: auto;
+    color: #fff;
+    background-color: rgba(156, 89, 22, 0.692);
+    border: 1px solid rgb(224, 91, 51);
+    padding: 15px;
+    margin: 0 15px 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 2px 2px 5px rgb(138, 114, 8);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.subcontenedor {
+    width: 100%;
+    height: 90%;
+    background-color: rgba(236, 195, 133, 0.521);
+    -webkit-box-shadow: 2px 2px 5px rgb(138, 114, 8);
+    border-radius: 25px;
+    position: relative;
+}
+
+.bloque {
+    width: 95%;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 5px rgb(138, 71, 8);
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translateY(50%);
+}
+
+.li.activo {
+    background-color: rgba(224, 91, 51, 0.952);
+    color: #fff;
+}
+
+.bloque.activo {
+    height: 90%;
+    opacity: 1;
+    background-color: rgba(224, 91, 51, 0.815);
+    transform: translateY(0%);
+
+}
+
+.contenido {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    padding: 10px;
+}
+
+.texto p {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-right: 15px;
+    font-weight: 450;
+    line-height: 20px;
+}
+
+.contenido img {
+    width: 45%;
+    height: auto;
+    margin-right: 25px;
+    border: 1px solid rgb(224, 91, 51);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido .tierraluna  {
+    width: 35%;
+    height: auto;
+    margin-left: 20px;
+    border: 1px solid rgb(224, 91, 51);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-tierraluna p {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-left: 15px;
+    font-weight: 450;
+    font-size: 15px;
+
+}
+
+.texto-tierraluna h4 {
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.texto-historia p {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-right: 15px;
+    font-weight: 450;
+    line-height: 25px;
+}
